@@ -55,7 +55,7 @@ const logSecret = (context, secret) => {
     context.log(`secret["attributes"]: ${secret["attributes"]}`);
 }
 
-module.exports = function (context, req) {
+module.exports = async function (context, req) {
     
     logDiagnostics(context);
 
